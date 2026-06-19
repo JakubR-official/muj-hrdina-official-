@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jakub Radošnský">
+        <meta name="description" content="Příběh BdoubleO100 - Od YouTube začátků až k legendě Hermitcraftu. Jeho cesta stavitele Minecraftu.">
+        <meta name="keywords" content="BdoubleO100, Bdubs, příběh, YouTube, Hermitcraft">
+        <meta property="og:title" content="Příběh Bdubs - Od začátků k legendě">
+        <title>Příběh Bdubs - Od YouTube začátků k Hermitcraftu</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+    </head>
+
+    <body>
+
+        <header id="hlavicka1">
+            <nav class="nav">
+                <a href="index.html">
+                    <img src="img/Bdubs_logo1.webp" alt="Bdubs logo">
+                </a>
+                <button class="hamburger" id="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="ul1" id="mobile-menu">
+                    <li><a href="index.html">domů</a></li>
+                    <li><a class="aktivni" href="pribeh.html">příběh</a></li>
+                    <li><a href="galerie.html">fotogalerie</a></li>
+                    <li><a href="staveni.html">stavění a projekty</a></li>
+                    <li><a href="proc.html">proč zrovna Bdubs</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="pribeh-main">
+            <h1>Příběh BdoubleO100</h1>
+            <section>
+                <p><strong>BdoubleO100</strong> začal jako běžný hráč a stal se legendou stavitelství. Jeho evoluce od prvních videí k dnešní slávy na Hermitcraftu je příběhem vášně a neustálého zdokonalování.</p>
+            </section>
+            <article>
+                <h2>Začátky na YouTube</h2>
+                <p>John Booko začal na YouTube v raných dnech platformy. Podobně jako mnoho tvůrců se postupně učil produkovat obsah. Jeho první videa nebyla tak sofistikovaná, ale již obsahovala prvky, které jej později proslavily – detailní design a umělecký přístup k Minecraftu.</p>
+            </article>
+            <article>
+                <h2>Éra Mindcracku</h2>
+                <p>Velkým bodem v Bdubsově kariéře byla účast na serveru <strong>Mindcrack</strong>. Zde se setkával s největšími tvůrci a rozvíjel svůj talent. Experimentoval s novými technikami stavby a objevoval svůj jedinečný styl.</p>
+            </article>
+            <article>
+                <h2>Hermitcraft - Vzestup k slávě</h2>
+                <p>Největší slávu dosáhl Bdubs po vstupu na <strong>Hermitcraft</strong>. Zde se jeho talent dostal do kontaktu s miliony diváků. Jeho detailní stavby, jako je městečko v divočině, se staly legendárními a inspirovaly tisíce stavitelů po celém světě.</p>
+            </article>
+            <div class="videa">
+                <h2>Nejnovější video</h2>
+                <iframe src="https://www.youtube.com/embed/videoseries?list=PL2XncHqN_7yL3eiY-XoFS--ZwADWo3usq" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+
+        </main>
+
+        <footer class="footer1">
+            <p><strong>Zdroje:</strong>
+            <a href="https://www.youtube.com/BdoubleO100" target="_blank">YouTube</a>
+            | 
+            <a href="https://hermitcraft.fandom.com/" target="_blank">Hermitcraft Wiki</a></p>
+            <p>&copy; Jakub Radošnský IT1B 2025/26</p>
+        </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuLinks = mobileMenu.querySelectorAll('a');
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+    </script>
+
+    </body>
+
+</html>

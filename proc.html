@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="cs">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jakub Radošnský">
+        <meta name="description" content="Proč je Bdubs zvláštní? Objevte důvody jeho slávy, jedinečného stavebního stylu a vlivu na Minecraft komunitu.">
+        <meta name="keywords" content="Bdubs, stavby, talent, Hermitcraft, texturované stavění">
+        <meta property="og:title" content="Proč Bdubs? - Důvody jeho jedinečnosti">
+        <title>Proč Bdubs? - Důvody jeho talentu a jedinečnosti</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+    </head>
+
+    <body>
+
+        <header id="hlavicka1">
+            <nav class="nav">
+                <a href="index.html">
+                    <img src="img/Bdubs_logo1.webp" alt="Bdubs logo">
+                </a>
+                <button class="hamburger" id="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="ul1" id="mobile-menu">
+                    <li><a href="index.html">domů</a></li>
+                    <li><a href="pribeh.html">příběh</a></li>
+                    <li><a href="galerie.html">fotogalerie</a></li>
+                    <li><a href="staveni.html">stavění a projekty</a></li>
+                    <li><a class="aktivni" href="proc.html">proč zrovna Bdubs</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="page-title">Proč zrovna Bdubs?</h1>
+
+            <section class="highlight-box">
+                <p class="lead-text"><strong>Bdubs není jen stavitel – je to umělec.</strong> Kombinuje detaily, textury a vášeň do každé stavby. To jej činí legendou stavitelství v Minecraftu.</p>
+            </section>
+
+            <h2>1. Jedinečný texturovaný stavební styl</h2>
+            <p>Bdubsův styl kombinuje různé druhy bloků a barev pro dosažení hloubky a realismu. Zatímco ostatní stavitelé používají jednotné textury, Bdubs vytváří stavby, které vypadají, jako by byly postaveny před lety.</p>
+
+            <h2>2. Obsese detaily</h2>
+            <p>Bdubs strávuje hodiny laděním jediného okna nebo výběrem správného odstínu mechu. Tato pozornost k detailům jej odlišuje od ostatních a činí z jeho staveb mistrovská díla.</p>
+
+            <h2>3. Energetická osobnost a humor</h2>
+            <p>Jeho legendární fráze "Sleep is for the weak" a energetický přístup dělají z jeho videí zábavný obsah. Nejde jen o stavbu – jde o to vyprávět příběh.</p>
+
+            <h2>4. Talent v designu a architektuře</h2>
+            <p>Bdubs rozumí symetrii, proporciím a historickým stylům. Když staví, používá skutečné architektonické principy, čímž z každé stavby dělá věrohodné dílo.</p>
+
+            <h2>5. Vliv na komunitu</h2>
+            <p>Tisíce hráčů se inspiruje jeho stavbami a učí se z jeho technik. Bdubs je mentor a vzor pro stavitele po celém světě.</p>
+        </main>
+
+        <footer class="footer1">
+            <p><strong>Zdroje:</strong>
+            <a href="https://www.youtube.com/BdoubleO100" target="_blank">YouTube</a>
+            | 
+            <a href="https://hermitcraft.fandom.com/" target="_blank">Hermitcraft Wiki</a></p>
+            <p>&copy; Jakub Radošnský IT1B 2025/26</p>
+        </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuLinks = mobileMenu.querySelectorAll('a');
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+    </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Stavění — Bdubs projekty</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="hlavicka1">
+        <nav class="nav">
+            <a href="index.html">
+                <img src="img/Bdubs_logo1.webp" alt="Bdubs logo">
+            </a>
+            <button class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="ul1" id="mobile-menu">
+                <li><a href="index.html">domů</a></li>
+                <li><a href="pribeh.html">příběh</a></li>
+                <li><a href="galerie.html">fotogalerie</a></li>
+                <li><a class="aktivni" href="staveni.html">stavění a projekty</a></li>
+                <li><a href="proc.html">proč zrovna Bdubs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Stavění a projekty</h1>
+        <p>Stručné shrnutí hlavních stavebních projektů podle sezón.</p>
+
+        <section>
+            <table class="projects-table">
+                <caption>Tabulka nejznámějších staveb Bdubs podle sezóny</caption>
+                <thead>
+                    <tr>
+                        <th>Sezóna</th>
+                        <th>Název základny / Projektu</th>
+                        <th>Stavitelský styl a hlavní prvky</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Season 5</td>
+                        <td>The Town / Městečko</td>
+                        <td>Komunitní městečko v renesančním a klasickém stylu s propracovaným interiérem.</td>
+                    </tr>
+                    <tr>
+                        <td>Season 6</td>
+                        <td>The Castle / Hrad</td>
+                        <td>Masivní středověký hrad postavený na vrcholu hory s detailními věžemi a hradbami.</td>
+                    </tr>
+                    <tr>
+                        <td>Season 7</td>
+                        <td>Toon Town &amp; Mayor's Castle</td>
+                        <td>Barevný, lehce kreslený styl (cartoon) plný organických tvarů, detailních stromů a starobylých ruin.</td>
+                    </tr>
+                    <tr>
+                        <td>Season 8</td>
+                        <td>The Moon Base / Měsíční základna</td>
+                        <td>Experimentální stavby zaměřené na optické klamy a masivní dioráma padajícího měsíce.</td>
+                    </tr>
+                    <tr>
+                        <td>Season 9</td>
+                        <td>The Elven Soup / Elfská vesnice</td>
+                        <td>Fantasy architektura zasazená do gigantických stromů a skalních masivů s pokročilým stínováním.</td>
+                    </tr>
+                    <tr>
+                        <td>Season 10</td>
+                        <td>Cyberpunk / Steampunk City</td>
+                        <td>Kombinace průmyslových prvků, měděných detailů a futuristického osvětlení s organickým nádechem.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <form action="#" method="post" class="feedback-form">
+                <h2>Dotazník pro fanoušky</h2>
+
+                <label for="visitor-name">Jméno / Přezdívka návštěvníka</label>
+                <input type="text" id="visitor-name" name="visitor-name" placeholder="Tvoje jméno nebo přezdívka" required>
+
+                <p>Jak dobře znáš Bdubse?</p>
+                <label><input type="radio" name="know-bdubs" value="hodne" required> Hodně</label>
+                <label><input type="radio" name="know-bdubs" value="trochu"> Trochu</label>
+                <label><input type="radio" name="know-bdubs" value="malo"> Málo</label>
+
+                <p>Který jeho stavitelský styl máš nejraději?</p>
+                <label><input type="checkbox" name="favorite-style" value="renesance"> Renesance / klasika</label>
+                <label><input type="checkbox" name="favorite-style" value="stredovek"> Středověk</label>
+                <label><input type="checkbox" name="favorite-style" value="cartoon"> Cartoon / barevný</label>
+                <label><input type="checkbox" name="favorite-style" value="futuristic"> Futuristický / sci-fi</label>
+
+                <label for="best-build">Hlasuj pro nejlepší stavbu z Hermitcraftu</label>
+                <select id="best-build" name="best-build" required>
+                    <option value="" disabled selected>Vyber stavbu</option>
+                    <option value="town">The Town / Městečko</option>
+                    <option value="castle">The Castle / Hrad</option>
+                    <option value="toon">Toon Town & Mayor's Castle</option>
+                    <option value="moon">The Moon Base / Měsíční základna</option>
+                    <option value="elf">The Elven Soup / Elfská vesnice</option>
+                    <option value="cyberpunk">Cyberpunk / Steampunk City</option>
+                </select>
+
+                <label for="message">Vzkaz pro Bdubse nebo tvůj názor</label>
+                <textarea id="message" name="message" rows="5" placeholder="Napiš svůj názor nebo vzkaz..."></textarea>
+
+                <button type="submit">Odeslat</button>
+                <p class="thanks-message" hidden>Díky za odeslání! Tvoje odpověď byla přijata.</p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer class="footer1">
+        <p><strong>Zdroje:</strong>
+        <a href="https://www.youtube.com/BdoubleO100" target="_blank">YouTube</a>
+        | 
+        <a href="https://hermitcraft.fandom.com/" target="_blank">Hermitcraft Wiki</a></p>
+        <p>&copy; Jakub Radošnský IT1B 2025/26</p>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuLinks = mobileMenu.querySelectorAll('a');
+
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+
+        if (feedbackForm) {
+            feedbackForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                feedbackForm.reset();
+                thanksMessage.hidden = false;
+                feedbackForm.querySelector('button[type="submit"]').disabled = true;
+                feedbackForm.querySelector('button[type="submit"]').textContent = 'Odesláno';
+            });
+        }
+    </script>
+</body>
+</html>

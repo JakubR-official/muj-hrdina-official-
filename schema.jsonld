@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "BdoubleO100",
+  "alternateName": ["Bdubs", "John Booko"],
+  "jobTitle": ["YouTube Content Creator", "Video Producer", "Minecraft Builder"],
+  "birthDate": "1982-09-12",
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Chicago, USA",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "41.8781",
+      "longitude": "-87.6298"
+    }
+  },
+  "description": "Americký tvůrce obsahu na YouTube a legenda stavitelství v Minecraftu, dlouholetý člen serverů Mindcrack a Hermitcraft.",
+  "sameAs": [
+    "https://www.youtube.com/c/BdoubleO100",
+    "https://youtube-allstars.fandom.com/wiki/BdoubleO100",
+    "https://hermitcraft.fandom.com/wiki/BdoubleO100",
+    "https://empires-smp.fandom.com/wiki/BdoubleO100",
+    "https://minecraft.fandom.com/wiki/Hermitcraft#BdoubleO100"
+  ],
+  "knowsAbout": ["Hermitcraft", "Empires SMP", "YouTube", "Minecraft"],
+  "award": "Dlouholetý člen komunity Hermitcraft",
+  "image": "img/Bdubs1.webp",
+  "url": "https://www.youtube.com/c/BdoubleO100"
+}
